@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Disk List</h2>
+    <ul>
+        {% for disk in viewModel.disks %}
+            <li>{{ disk.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
